@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>東大テニスサークル　レモンスマッシュ2018新歓ページ</title>
+    <meta name="description" content="東京大学、お茶の水女子大学、日本女子大学で構成されるインカレテニスサークル、東大レモンスマッシュ（レスマ）の2018年度新歓ページです。サークルの基本情報やイベント紹介、
+    新入生向けの練習会などの情報を発信しています。">
+    <meta name="keywords" content="東京大学 東大 テニス サークル 新歓 レスマ レモンスマッシュ テニサー 日本女子大学 本女 お茶の水女子大学 お茶 協賛 支援 企業 広告 就活 東大生">
+    <meta name="author" content="東大レモンスマッシュ">
+
+    <meta property="og:title" content="東大テニスサークル　レモンスマッシュ新歓ページ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.lemon-smash-shinkan.info/" />
+    <meta property="og:image" content="http://www.lemon-smash-shinkan.info/images/ogp2.png?4362984378" />
+    <meta property="og:site_name"  content="東大テニスサークル　レモンスマッシュ新歓ページ" />
+    <meta property="og:description" content="東京大学、お茶の水女子大学、日本女子大学で構成されるインカレテニスサークル、東大レモンスマッシュ（レスマ）の2018年度新歓ページです。サークルの基本情報やイベント紹介、
+    新入生向けの練習会などの情報を発信しています。" />
+    <meta property="fb:app_id" content="1036253576438450" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shinkan43" />
+    <%= analytics_init if Rails.env.production? %>
+
+    <%= favicon_link_tag '/favicon.ico' %>
+    <%= favicon_link_tag 'favicon.png', :rel => 'apple-touch-icon',
+  :type => 'image/png' %>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <%= csrf_meta_tags %>
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <%= stylesheet_link_tag "jquery.bxslider", :media => "all" %>
+    <!-- bxSlider CSS file -->
+    <%= javascript_include_tag "jquery.bxslider.min", :media => "all" %>
+    <script type="text/javascript">
+              jQuery(document).ready(function($){
+               $('.bxslider').bxSlider({
+                  mode:'fade',
+                   auto: true,
+                   float:"left",
+                   slideWidth : 800, //スライドショーの幅
+
+               });
+         });
+    </script>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Lemon Smash</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right snip1189">
+            <li class="<%= "current" if @active == "home"%> nav-txt"><a href="/">Home</a></li>
+            <li class="<%= "current" if @active == "info"%> nav-txt"><a href="basic">Info</a></li>
+            <li class="<%= "current" if @active == "members"%> nav-txt"><a href="members">Members</a></li>
+            <li class="<%= "current" if @active == "events"%> nav-txt"><a href="events">Events</a></li>
+            <li class="<%= "current" if @active == "practice"%> nav-txt"><a href="practice">新歓</a></li>
+            <li class= "nav-txt"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <%= yield%>
+
+    <section id="contacts"></section>
+    <div class="container">
+    	<div class="row centered mt mb">
+    		<h1>Contacts</h1>
+        <p>新歓参加希望の方はこちらから！</p>
+        <p>レモンスマッシュでは当サークルの活動に３社の企業様より協賛・支援していただいております。</p>
+        <p>現在も協賛・支援していただける企業様を募集しておりますので、関心を持っていただけましたらご連絡ください</p>
+        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+          <figure class="snip1256">
+            <%=image_tag "index/mail_edit.png",:class => "img-responsive"%>
+            <figcaption>
+              <h3>E-mail</h3>
+              <p>レモンスマッシュのEmailです。新歓担当者に直接つながります。練習会の予約や協賛の連絡などにお使いください。
+              </p><a href="mailto:lsmshinkan44th@gmail.com?subject=お問い合わせ&amp;body=【お名前】 %0D%0A 【出身校】 %0D%0A 【進学大学】%0D%0A 【テニス歴】%0D%0A 【内容】 " class="read-more">Send E-Mail</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+          <div>
+            <a class="twitter-timeline" data-height="700" href="https://twitter.com/UT_lemonsmash42?ref_src=twsrc%5Etfw">Tweets by UT_lemonsmash42</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+          </div>
+        </div>
+    	</div><! --/row -->
+    </div><! --/container -->
+    <div class=" navbar-fixed-bottom" style="background-color:none;">
+     <p id="pageTop"><a href="#"><i class="fa fa-arrow-circle-up fa-4x" style="color:gray;"></i></a></p>
+   </div>
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+
+				</div>
+				<div class="col-lg-4">
+          <p>&copy;Lemon Smash</p>
+				</div>
+			</div>
+		</div>
+	</div><! --/footerwrap -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  </body>
+</html>

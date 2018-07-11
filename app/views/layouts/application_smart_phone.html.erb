@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="東京大学、お茶の水女子大学、日本女子大学で構成されるインカレテニスサークル、東大レモンスマッシュ（レスマ）の2018年新歓ページです。サークルの基本情報やイベント紹介、
+    新入生向けの練習会などの情報を発信しています。">
+    <meta name="keywords" content="東京大学 東大 テニス サークル 新歓 レスマ レモンスマッシュ テニサー 日本女子大学 お茶の水女子大学 協賛 支援 企業 広告 就活 東大生">
+    <meta name="author" content="東大レモンスマッシュ">
+    <%= favicon_link_tag '/favicon.ico' %>
+    <%= favicon_link_tag 'favicon.png', :rel => 'apple-touch-icon',
+  :type => 'image/png' %>
+    <title>東大テニスサークル　レモンスマッシュ2018新歓ページ</title>
+    <%= stylesheet_link_tag    'smart_phone/application', media: 'all', 'data-turbolinks-track' => false %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    <meta property="og:title" content="東大テニスサークル　レモンスマッシュ新歓ページ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.lemon-smash-shinkan.info/" />
+    <meta property="og:image" content="http://www.lemon-smash-shinkan.info/images/ogp2.png?4362984378" />
+    <meta property="og:site_name"  content="東大テニスサークル　レモンスマッシュ新歓ページ" />
+    <meta property="og:description" content="東京大学、お茶の水女子大学、日本女子大学で構成されるインカレテニスサークル、東大レモンスマッシュ（レスマ）の2018年度新歓ページです。サークルの基本情報やイベント紹介、
+    新入生向けの練習会などの情報を発信しています。" />
+    <meta property="fb:app_id" content="1036253576438450" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shinkan43" />
+    <%= analytics_init if Rails.env.production? %>
+
+
+    <%= csrf_meta_tags %>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Lemon Smash</a>
+        </div>
+        <div class="container navbar-collapse collapse">
+          <table class="table  snip1189s smart col-xs-12" style="margin-bottom:0px;">
+            <tr>
+              <td class="<%= "current" if @active == "home"%> nav-txt"><a href="/">Home</a></td>
+              <td class="<%= "current" if @active == "info"%> nav-txt"><a href="basic">Info</a></td>
+              <td class="<%= "current" if @active == "members"%> nav-txt"><a href="members">Members</a></td>
+            </tr>
+            <tr>
+              <td class="<%= "current" if @active == "events"%> nav-txt"><a href="events">Events</a></td>
+              <td class="<%= "current" if @active == "practice"%> nav-txt"><a href="practice">新歓</a></td>
+              <td class="<%= "current" if @active == "contacts"%> nav-txt"><a href="/contacts">Contacts</a></td>
+            </tr>
+          </table>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <%= yield%>
+
+    <div class=" navbar-fixed-bottom" style="background-color:none;">
+      <p></p>
+     <p id="pageTop"><a href="#"><i class="fa fa-arrow-circle-up fa-3x" style="color:gray;"></i></a></p>
+   </div>
+
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+
+				</div>
+				<div class="col-lg-4">
+          <div class="widget-body">
+            <p class="follow-me-icons">
+              <a class="twitter-timeline" data-height="700" href="https://twitter.com/UT_lemonsmash42?ref_src=twsrc%5Etfw">Tweets by UT_lemonsmash42</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+               <a href="mailto:lsmshinkan44th@gmail.com?subject=お問い合わせ&amp;body=【お名前】 %0D%0A 【出身校】 %0D%0A 【進学大学】%0D%0A 【テニス歴】%0D%0A 【内容】 " class="read-more"><i class="fa fa-envelope-o fa-2"></i></a>
+            </p>
+          </div>
+          <p>&copy;Lemon Smash</p>
+				</div>
+			</div>
+		</div>
+	</div><! --/footerwrap -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  </body>
+</html>

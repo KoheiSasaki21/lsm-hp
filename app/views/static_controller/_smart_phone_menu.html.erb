@@ -1,0 +1,14 @@
+<div class="container">
+  <table class="table  snip1189s smart col-xs-12" style="margin-bottom:0px;">
+    <tr>
+      <td class="<%= "current" if @active == "home"%> nav-txt"><a href="/">Home</a></td>
+      <td class="<%= "current" if @active == "info"%> nav-txt"><a href="basic">Info</a></td>
+      <td class="<%= "current" if @active == "members"%> nav-txt"><a href="members">Members</a></td>
+    </tr>
+    <tr>
+      <td class="<%= "current" if @active == "events"%> nav-txt"><a href="events">Events</a></td>
+      <td class="<%= "current" if @active == "practice"%> nav-txt"><a href="practice">練習会</a></td>
+      <td class="<%= "current" if @active == "contacts"%> nav-txt"><a href="/contacts">Contacts</a></td>
+    </tr>
+  </table>
+</div><!--/.nav-collapse -->

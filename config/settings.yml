@@ -1,0 +1,26 @@
+defaults: &defaults
+  title: faesaea
+  cool:
+    saweet: nested settings
+  neat_setting: 24
+  awesome_setting: <%= "Did you know 5 + 5 = #{5 + 5}?" %>
+  hello: fawfa
+  site:
+    title: 東大LemonSmash新歓ページ
+    url: http://www.lemon-smash-shinkan.info/
+    meta:
+      description: 東京大学のテニスサークル
+      keywords: %w[東大 レモンスマッシュ テニス サークル 新歓]
+      og:
+        image: lemon_top2.jpg
+        app_id: "app id"
+        type: "website"
+
+development:
+  <<: *defaults
+  neat_setting: 800
+
+test:
+  <<: *defaults
+
+production:

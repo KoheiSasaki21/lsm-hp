@@ -1,0 +1,38 @@
+<div id="tenniswrap">
+    <div class="container">
+  		<div class="row">
+  			<div class="col-lg-8 col-lg-offset-2">
+          <h1 style="font-size:300%;">CONTACT INFO</h1>
+  			</div>
+  		</div><! --/row -->
+    </div> <!-- /container -->
+</div><! --/headerwrap -->
+
+<%= render 'smart_phone_menu' %>
+
+<section id="contacts"></section>
+<div class="container">
+  <div class="row centered">
+    <h1>Contacts</h1>
+    <figure class="snip1360" id="line">
+      <%=image_tag "index/lsm_line_edit.png",:class => "img-responsive"%>
+      <figcaption>
+        <h2>公式LINEアカウント</h2>
+        <p>レモンスマッシュの新歓用公式アカウントです。男子向けのテニス練習会や、御茶ノ水女子大、日本女子大での勧誘情報を発信します。
+          QRコードで読み取っていただき、友だち追加してください。</p><a href="/line" class="read-more">View Large QR</a>
+      </figcaption>
+    </figure>
+    <figure class="snip1360 hover">
+      <%=image_tag "index/mail_edit.png",:class => "img-responsive centered"%>
+      <figcaption>
+        <h2>E-mail</h2>
+        <p>レモンスマッシュの新歓用Emailです。新歓担当者に直接つながります。練習会の予約や質問などにお使いください。
+        <a href="mailto:lsmshinkan44th@gmail.com?subject=お問い合わせ&amp;body=【お名前】 %0D%0A 【出身校】 %0D%0A 【進学大学】%0D%0A 【テニス歴】%0D%0A 【内容】 " class="read-more">Send E-Mail</a>
+      </figcaption>
+    </figure>
+    <div>
+      <a class="twitter-timeline" href="https://twitter.com/UT_LemonSmash" data-widget-id="709352333096845312">@UT_LemonSmashさんのツイート</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div><! --/row -->
+</div><! --/container -->
